@@ -16,12 +16,12 @@ def rate(name, rate, threshold=nil)
   }
 end
 
-def standard_deduction(name, deduction)
+def deduction(name, deduction)
   DEDUCTIONS[name] ||= []
   DEDUCTIONS[name] << deduction
 end
 
-def personal_exemption(name, exemption)
+def exemption(name, exemption)
   EXEMPTIONS[name] ||= []
   EXEMPTIONS[name] << exemption
 end
@@ -33,8 +33,8 @@ rate :federal_married_joint, 0.25, 139350
 rate :federal_married_joint, 0.28, 212300
 rate :federal_married_joint, 0.33, 379150
 rate :federal_married_joint, 0.35
-standard_deduction :federal_married_joint, 11600
-personal_exemption :federal_married_joint, 7400
+deduction :federal_married_joint, 11600
+exemption :federal_married_joint, 7400
 
 # CA tax
 rate :ca_married_joint, 0.011, 14248
@@ -44,8 +44,8 @@ rate :ca_married_joint, 0.066, 74010
 rate :ca_married_joint, 0.088, 93532
 rate :ca_married_joint, 0.1023, 1000000
 rate :ca_married_joint, 0.1133
-standard_deduction :ca_married_joint, 7340
-personal_exemption :ca_married_joint, 182
+deduction :ca_married_joint, 7340
+exemption :ca_married_joint, 182
 
 # Social security
 rate :social_security_married_joint, 0.045, 106800 # TODO: Is this accurate for married
