@@ -26,32 +26,10 @@ def exemption(name, exemption)
   EXEMPTIONS[name] << exemption
 end
 
-# Federal tax
-rate :federal_married_joint, 0.10, 17000
-rate :federal_married_joint, 0.15, 69000
-rate :federal_married_joint, 0.25, 139350
-rate :federal_married_joint, 0.28, 212300
-rate :federal_married_joint, 0.33, 379150
-rate :federal_married_joint, 0.35
-deduction :federal_married_joint, 11600
-exemption :federal_married_joint, 7400
-
-# CA tax
-rate :ca_married_joint, 0.011, 14248
-rate :ca_married_joint, 0.022, 33780
-rate :ca_married_joint, 0.044, 53314
-rate :ca_married_joint, 0.066, 74010
-rate :ca_married_joint, 0.088, 93532
-rate :ca_married_joint, 0.1023, 1000000
-rate :ca_married_joint, 0.1133
-deduction :ca_married_joint, 7340
-exemption :ca_married_joint, 182
-
-# Social security
-rate :social_security_married_joint, 0.045, 106800 # TODO: Is this accurate for married
-
-# Medicare
-rate :medicare, 0.0145
+require 'rates/federal'
+require 'rates/state_ca'
+require 'rates/medicare'
+require 'rates/social_security'
 
 def calculate_tax_part(status, salary)
   # Adjust salary for deductions and exemptions if any
