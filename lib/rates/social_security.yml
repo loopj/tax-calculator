@@ -1,0 +1,5 @@
+social_security:
+  married_filing_jointly:
+    rates:
+      - rate: 0.045
+        limit: 106800

@@ -1,0 +1,64 @@
+federal_income_tax:
+  single:
+    rates:
+    - rate: 0.10
+      limit: 8500
+    - rate: 0.15
+      limit: 34500
+    - rate: 0.25
+      limit: 83600
+    - rate: 0.28
+      limit: 174400
+    - rate: 0.33
+      limit: 379150
+    - rate: 0.35
+    standard_deduction: 5800
+    personal_exemption: 3700
+
+  married_filing_seperately:
+    rates:
+    - rate: 0.10
+      limit: 8500
+    - rate: 0.15
+      limit: 34500
+    - rate: 0.25
+      limit: 69675
+    - rate: 0.28
+      limit: 106150
+    - rate: 0.33
+      limit: 189575
+    - rate: 0.35
+    standard_deduction: 5800
+    personal_exemption: 3700
+
+  married_filing_jointly:
+    rates:
+    - rate: 0.10
+      limit: 17000
+    - rate: 0.15
+      limit: 69000
+    - rate: 0.25
+      limit: 139350
+    - rate: 0.28
+      limit: 212300
+    - rate: 0.33
+      limit: 379150
+    - rate: 0.35
+    standard_deduction: 11600
+    personal_exemption: 7400
+
+  head_of_household:
+    rates:
+    - rate: 0.10
+      limit: 12150
+    - rate: 0.15
+      limit: 46250
+    - rate: 0.25
+      limit: 119400
+    - rate: 0.28
+      limit: 193350
+    - rate: 0.33
+      limit: 379150
+    - rate: 0.35
+    standard_deduction: 8500
+    personal_exemption: 3700

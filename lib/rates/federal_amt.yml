@@ -1,0 +1,7 @@
+federal_amt:
+  married_filing_jointly:
+    rates:
+      - rate: 0.26
+        limit: 175000
+      - rate: 0.28
+    personal_exemption: 74450

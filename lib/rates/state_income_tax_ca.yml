@@ -1,0 +1,18 @@
+state_income_tax_ca:
+  married_filing_jointly:
+    rates:
+    - rate: 0.011
+      limit: 14248
+    - rate: 0.022
+      limit: 33780
+    - rate: 0.044
+      limit: 53314
+    - rate: 0.066
+      limit: 74010
+    - rate: 0.088
+      limit: 93532
+    - rate: 0.1023
+      limit: 1000000
+    - rate: 0.1133
+    standard_deduction: 7340
+    personal_exemption: 182

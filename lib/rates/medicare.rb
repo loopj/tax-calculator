@@ -1,1 +1,0 @@
-rate :medicare, 0.0145

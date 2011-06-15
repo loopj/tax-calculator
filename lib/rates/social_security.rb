@@ -1,1 +1,0 @@
-rate :social_security_married_joint, 0.045, 106800 # TODO: Is this accurate for married?
